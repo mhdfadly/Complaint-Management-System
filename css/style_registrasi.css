@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#right {
+
+    flex: 2;
+    padding-top: 15rem;
+    justify-content: center;
+}
+
+/* Register */
+#register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#register form {
+    width: 60%;
+    padding-bottom: 3rem;
+}
+
+
+#register .logo {
+    margin-bottom: 0vh;
+}
+
+#register .signup-submit {
+    width: 60%;
+}
+
+.register-title {
+    align-self: flex-start;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+}
+
+.image-register {
+    margin-right: 6rem;
+}
+
+/* Button */
+.signup-submit {
+    margin-left: 5.5rem;
+    margin-top: 4rem;
+    padding: 0.5rem 1rem;
+    height: 2.7rem;
+    display: block;
+    box-align: center;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #f96816;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.signup-submit:hover {
+    background-color: #ff7b39;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    #left {
+        flex: 6;
+    }
+
+    #right {
+        flex: 6;
+    }
+}
